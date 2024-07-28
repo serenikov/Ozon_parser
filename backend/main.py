@@ -15,7 +15,7 @@ with open('codes.txt', 'r') as f:
 df = pd.DataFrame()
 # Инициализация веб-драйвера
 driver = uc.Chrome()
-
+driver.get('http://google.com/')
 driver.implicitly_wait(10)
 
 # Парсинг каждого товара
